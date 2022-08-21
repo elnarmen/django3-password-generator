@@ -1,6 +1,10 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <div class="container text-center">
-    <h1>Password Generator</h1>
+    <div class="justifly-content-center">
+        <br>
+        <br>
+        <br>
+    <h1>Генератор паролей</h1>
 
     <form action="{% url 'password' %}">
         <select name="length">
@@ -13,18 +17,19 @@
             <option value="12"б selected="selected">12</option>
             <option value="13">13</option>
             <option value="14">14</option>
-        </select> Length
+        </select> Длина
         <br>
-        <input type="checkbox" name="uppercase"> Uppercase
+        <input type="checkbox" name="uppercase"> Заглавные буквы
         <br>
-        <input type="checkbox" name="numbers"> Numbers
+        <input type="checkbox" name="numbers"> Числа
         <br>
-        <input type="checkbox" name="special"> Special Characters
+        <input type="checkbox" name="special"> Специальные символы
         <br>
-        <input type="submit" value="Generate Password" class="btn btn-primary">
+        <input type="submit" value="Сгенерировать" class="btn btn-primary">
         <br>
         <br>
         <br>
-        <a href="{% url 'about' %}">About Page</a>
+        <a href="{% url 'about' %}">О сайте</a>
     </form>
+    </div>
 </div>
